@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 export const client = createClient(
-    process.env.REACT_APP_SUPABSE_URL,
-    process.env.REACT_APP_SUPABASE_KEY
+    process.env.SUPABSE_URL,
+    process.env.SUPABASE_KEY
 );
 
 export function checkError({ data, error }) {
