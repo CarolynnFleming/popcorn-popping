@@ -3,10 +3,12 @@
 }
 body {
     margin: 0;
+    background-color: lightgrey;
 }
+
 .nav {
     background-color: yellow;
-    color: green;
+    color: red;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
