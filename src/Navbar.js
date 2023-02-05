@@ -12,11 +12,14 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import { Link } from 'react-router-dom';
+import popcorn from './assets/popcorn.gif';
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { red, amber } from '@mui/material/colors';
+import './styles.css'
 
 const pages = ['About', 'Popcorn', 'ItalianIce', 'Cart', 'Contact'];
-const settings = ['Profile', 'Popcorn', 'ItalianIce', 'Tins', 'Mixes'];
+const settings = ['Cart', 'Popcorn', 'ItalianIce', 'Tins', 'Mixes'];
 
 function ResponsiveAppBar() {
 
@@ -40,17 +43,20 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static" style={{ color: "yellow"}} >
+    <AppBar position="static" style={{ backgroundColor: amber[500] }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters >
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 4 }} /> */}
+          
+          <Avatar alt="popcorn gif"src={popcorn} style={{ width: 100, height: 100, }}/>
+          
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              mr: 5,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
               fontWeight: 700,
@@ -59,7 +65,8 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            What's Popping Popcorn
+            {/* <img src="./assets/popcorn.gif"/> */}
+            What'sPoppingPopcorn
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -104,7 +111,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1, fontSize: 50 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -139,12 +146,12 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 5 }}>
+                <MoreVertIcon  sx={{ color: red[500], fontSize: 50 }} />
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: '45px' }}
+              sx={{ mt: '120px' }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
@@ -161,7 +168,9 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Link style={{ textDecoration: "none", color: "red"}} to={`/${setting}`}>
+                    {setting}
+                    </Link>
                 </MenuItem>
               ))}
             </Menu>
