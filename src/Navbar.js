@@ -16,7 +16,7 @@ import { Link } from 'react-router-dom';
 import popcorn from './assets/popcorn.gif';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { red, amber } from '@mui/material/colors';
-import './styles.css'
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 
 const pages = ['About', 'Popcorn', 'ItalianIce', 'Cart', 'Contact'];
 const settings = ['Cart', 'Popcorn', 'ItalianIce', 'Tins', 'Mixes'];
@@ -44,32 +44,34 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" style={{ backgroundColor: amber[500] }} >
-      <Container maxWidth="xl">
+      <Container maxWidth="large">
         <Toolbar disableGutters >
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 4 }} /> */}
           
-          <Avatar alt="popcorn gif"src={popcorn} style={{ width: 100, height: 100, }}/>
-          
+          <Avatar  alt="popcorn gif"src={popcorn} style={{ width: 100, height: 100,  }}/>
+            
           <Typography
             variant="h5"
             noWrap
             component="a"
             href="/"
             sx={{
-              mr: 5,
+              mr: 13,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.2rem',
+              fontWeight: 500,
+              letterSpacing: '0rem',
               color: 'red',
               textDecoration: 'none',
             }}
           >
             {/* <img src="./assets/popcorn.gif"/> */}
-            What'sPoppingPopcorn
+            What's Popping
+            
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -128,7 +130,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Whats poppin
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -137,7 +139,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'red', display: 'block' }}
               >
-                <Link style={{ textDecoration: "none", color: "red"}} to={`/${page}`}>
+                <Link style={{ fontSize: 20, textDecoration: "none", color: "red" }} to={`/${page}`}>
                     {page}
                     </Link>
               </Button>

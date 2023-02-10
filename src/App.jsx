@@ -10,7 +10,7 @@ import PopcornList from './views/PopcornList';
 import About from './About';
 import Cart from './Cart';
 import Contact from './Contact';
-import './styles.css'
+import './App.css'
 
 function App() {
   return (
