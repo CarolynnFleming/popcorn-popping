@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PopcornList() {
+export default function GrabAndGo() {
   return (
     <div>PopcornList</div>
   )

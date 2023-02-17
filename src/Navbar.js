@@ -16,9 +16,8 @@ import { Link } from 'react-router-dom';
 import popcorn from './assets/popcorn.gif';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { red, amber } from '@mui/material/colors';
-import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 
-const pages = ['About', 'Popcorn', 'ItalianIce', 'Cart', 'Contact'];
+const pages = ['About', 'Popcorn','ItalianIce', 'Cart', 'Contact'];
 const settings = ['Cart', 'Popcorn', 'ItalianIce', 'Tins', 'Mixes'];
 
 function ResponsiveAppBar() {
@@ -28,7 +27,7 @@ function ResponsiveAppBar() {
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-    navigate('./about');
+    
   };
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);

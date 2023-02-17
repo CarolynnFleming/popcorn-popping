@@ -1,4 +1,5 @@
 import React from 'react'
+import EmailContactForm from './EmailContactForm'
 
 export default function Contact() {
   return (
@@ -10,6 +11,7 @@ export default function Contact() {
       <h2>708-897-9757</h2>
       <h4 style={{paddingTop: '50px'}}>LOCATION:</h4>
       <h2> 11517 S. Pulaski Rd, Alsip, IL 60803</h2>
+      <EmailContactForm/>
       </div>
   )
 }
