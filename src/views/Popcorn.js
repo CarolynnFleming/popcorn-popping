@@ -9,7 +9,13 @@ import {Grid} from '@mui/material';
 import pop from '../assets/popcorn.gif';
 import {Link} from 'react-router-dom';
 import GrabnGo from '../assets/grabngo.jpg';
-
+import Mix from '../assets/mix.jpg';
+import Bucket from '../assets/Bucket.jpg';
+import oneG from '../assets/oneG.jpg';
+import sportsT from '../assets/sportsT.jpeg';
+import goldT from '../assets/goldTin.jpeg';
+import whiteT from '../assets/whiteTin.jpeg';
+import ice from '../assets/ice.jpg';
 export default function Popcorn() {
   return (
     <Grid container spacing={10}  style={{paddingTop:40,paddingLeft: 90, paddingRight:70}}>
@@ -66,16 +72,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={Mix}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Mixes Bags
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+           3 Flavors Available<br/>
+           4 Sizes Available
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -89,16 +95,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={Bucket}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Bucket
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+            7 Flavors Available<br/>
+            1 Size Available
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -112,16 +118,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={oneG}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            1 Gallon
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+          7 Flavors Available<br/>
+            1 Size Available
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -135,16 +141,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={sportsT}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            1 Gallon Sports Tin
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+          7 Flavors Available<br/>
+            1 Size Available
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -158,16 +164,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={goldT}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            2 Gallon Tin
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+          7 Flavors Available<br/>
+            1 Size Available
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -181,16 +187,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={whiteT}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            3 Gallon Tin
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+          7 Flavors Available<br/>
+            1 Size Available
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -204,16 +210,16 @@ export default function Popcorn() {
         <CardMedia
           component="img"
           height="140"
-          image={pop}
+          image={ice}
           alt="green iguana"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Italian Ice
           </Typography>
           <Typography variant="body2" color="primary">
-            Lizards are a widespread group of squamate reptiles, with over 4,000
-            species, ranging across all continents except Antarctica
+            12 Flavors Available<br/>
+            4 Sizes Available  
           </Typography>
         </CardContent>
       </CardActionArea>

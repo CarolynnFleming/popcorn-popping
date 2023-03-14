@@ -11,8 +11,14 @@ import About from './About';
 import Cart from './Cart';
 import Contact from './Contact';
 import './App.css'
-import Bags  from './views/Bags';
-
+import Bags from './views/Bags';
+import Bucket  from './views/Bucket';
+import GrabAndGo from './views/GrabAndGo';
+import MixesBags  from './views/MixesBags';
+import OneGallon  from './views/OneGallon';
+import OneGallonSportsTin  from './views/OneGallonSportsTin';
+import TwoGallonTin  from './views/TwoGallonTin';
+import ThreeGallonTin  from './views/ThreeGallonTin';
 function App() {
   return (
    
@@ -26,6 +32,13 @@ function App() {
         <Route path="Cart" element={<Cart />} />
         <Route path="Contact" element={<Contact />}/>
         <Route path="Bags" element={<Bags/>}/>
+        <Route path="Bucket" element={<Bucket/>}/>
+        <Route path="GrabAndGo" element={<GrabAndGo/>}/>
+        <Route path="MixesBags" element={<MixesBags/>}/>
+        <Route path="OneGallon" element={<OneGallon/>}/>
+        <Route path="OneGallonSportsTin" element={<OneGallonSportsTin/>}/>
+        <Route path="TwoGallonTin" element={<TwoGallonTin/>}/>
+        <Route path="ThreeGallonTin" element={<ThreeGallonTin/>}/>
       </Routes>
      
           
