@@ -21,7 +21,7 @@ export default function ItalianiceList() {
       <img src={Itallian}/>
       <label>
       Choose A Flavor:
-      
+      marty
       <select name="flavor">
         <option value="1">Lemon</option>
         <option value="2">Lime</option>
