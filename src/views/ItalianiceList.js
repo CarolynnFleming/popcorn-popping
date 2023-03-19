@@ -22,6 +22,7 @@ export default function ItalianiceList() {
       <label>
       Choose A Flavor:
       marty
+      dave
       <select name="flavor">
         <option value="1">Lemon</option>
         <option value="2">Lime</option>
